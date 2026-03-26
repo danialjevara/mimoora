@@ -123,8 +123,8 @@ h3 {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 28px;
-  align-items: flex-start;
-  margin-bottom: 36px;
+  align-items: center; /* Changed from flex-start to center for better balance */
+  margin-bottom: 24px;
 }
 
 .hero-copy,
@@ -172,11 +172,39 @@ h3 {
   line-height: 1.9;
 }
 
-.hero-points {
+.hero-summary {
+  margin-bottom: 30px;
+  padding: 24px;
+  border-radius: var(--radius-xl);
+  background: white;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.points-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.point-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--deep);
+  font-size: 1rem;
+}
+
+.point-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.highlights-item {
+  background: rgba(255, 216, 77, 0.1);
+  padding: 10px 14px;
+  border-radius: 14px;
 }
 
 .hero-offer-frame {
