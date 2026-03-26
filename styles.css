@@ -69,14 +69,14 @@ a {
   gap: 14px;
 }
 
-.brand-bubble {
-  width: 54px;
-  height: 54px;
+.brand-logo {
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.95), transparent 24%),
-    linear-gradient(135deg, var(--aqua), var(--coral));
-  box-shadow: inset -10px -12px 20px rgba(255, 255, 255, 0.16);
+  object-fit: cover;
+  background: white;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(14, 90, 122, 0.06);
 }
 
 .brand-name,
