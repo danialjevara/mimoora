@@ -672,7 +672,7 @@ h3 {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 24px;
 }
@@ -684,6 +684,8 @@ h3 {
   background: #000;
   border: 1px solid var(--line);
   aspect-ratio: 9/16;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
 .video-card video {
